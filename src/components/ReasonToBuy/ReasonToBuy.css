@@ -1,0 +1,91 @@
+.Reason-To-Buy {
+  margin: 40px 0 0 40px;
+}
+.card-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 90%;
+  margin: auto;
+  gap: 1rem;
+  margin-top: 40px;
+}
+.Reasoncard {
+  background-image: linear-gradient(to left, #0078d5, #4e95cc);
+
+  color: white;
+  /* height: 250px; */
+  border-radius: 20px;
+}
+
+.Reasoncard-info {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 40px;
+}
+
+.reasonData {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  text-align: center;
+}
+.reasonData h3 {
+  font-size: 28px;
+}
+
+.reasonData button {
+  padding: 9px 12px;
+  border-radius: 5px;
+  font-weight: 400;
+  letter-spacing: 1.15px;
+  background-color: #fba338;
+  color: white;
+  border-radius: 10px;
+  margin: auto;
+  margin-top: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+ .Reasoncard-info{
+    display: flex;
+    flex-direction: column;
+   
+
+ }
+ .reasonImg{
+    width: 100%;
+ }
+ .reasonData h3 {
+    font-size: 16px;
+
+   
+ }
+ .reasonData button{
+    width: 100%;
+    font-size: 12px;
+    padding: 6px;
+    border-radius: 2px;
+ }
+ .reasonData :first-child{
+    margin-top: 10px;
+ }
+
+
+}
+@media (max-width: 380px) {
+  .card-row{
+    grid-template-columns: 1fr;
+  }
+  .reasonData h3{
+    font-size: 28px;
+  }
+  .reasonImg{
+    width: 50%;
+  }
+
+}
+

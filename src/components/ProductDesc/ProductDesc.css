@@ -1,0 +1,129 @@
+.product-detail-section{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 90%;
+    gap: 5rem;
+    margin: auto;
+    padding-top: 100px;
+}
+.img-preview{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid gray;
+    border-radius: 20px;
+    padding: 40px;
+ 
+}
+.product-detail{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    
+}
+.product-detail h2{
+    font-size: 32px;
+    letter-spacing: 2px;
+    font-weight: 400;
+}
+.product-detail h3{
+    font-weight: 300;
+    font-size: 16px;
+}
+.rating{
+    display: flex;
+    gap: 1rem;
+}
+.assured{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.product-pr{
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+ 
+      
+}
+.product-pr p{
+  
+    font-size: 12px;
+    color: gray;
+    
+}
+.product-pr h2{
+    font-size: 36px;
+    letter-spacing: 2px;
+    
+
+}
+.ramrom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #48AFFF;
+
+    color: #48AFFF;
+    border-radius: 10px;
+    width: 200px;
+    padding: 10px 20px;
+    
+}
+.storage{
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+.AddToCart{
+    background-color: orange;
+    padding: 10px 30px;
+    width: 50%;
+    border: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    border-radius: 10px;  
+    cursor: pointer;
+}
+.Specification h1{
+    padding: 30px 0px;
+    width: 90%;
+    margin: auto;
+    
+}
+.Specification{
+    background-color: #dadada;
+    color: gray;
+    margin: 10px 0px;
+}
+.mobile-box{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width: 90%;
+    margin: auto;
+    padding: 60px 0px;
+}
+.mbl-box-img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+   
+}
+
+@media (max-width: 600px) {
+    .product-detail-section{
+      
+        grid-template-columns: 1fr;
+    }
+    .product-detail{
+        margin: auto;
+    }
+    .AddToCart{
+        font-size: 12px;
+        width: 100%;
+    }
+}

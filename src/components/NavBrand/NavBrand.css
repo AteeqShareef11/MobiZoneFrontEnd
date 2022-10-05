@@ -1,0 +1,80 @@
+.navbrand {
+  width: 100%;
+
+
+  padding: 30px 10px;
+}
+.shop-by-brand {
+  margin: 40px 0 0 40px;
+}
+
+.allbrands {
+  width: 95%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  overflow-x: hidden;
+}
+
+.eachbrand {
+ padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.branding {
+  padding-top: 10px;
+  color: black;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+@media (max-width: 600px) {
+  .navbrand {
+    width: 100%;
+    padding: 30px 0px;
+  }
+  .allbrands {
+    width: 100%;
+    justify-content: flex-start;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+  }
+
+  .eachbrand {
+    padding: 10px;
+   
+  }
+
+  .branding {
+    font-size: 12px;
+  }
+
+}
+
+@media (max-width: 1024px) {
+  .allbrands {
+    width: 100%;
+    gap: 0.4rem;
+  }
+  .eachbrand{
+    padding: 0;
+  }
+  
+  .branding {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 912px) {
+    .allbrands {
+        width: 100%;
+        justify-content: flex-start;
+        overflow-x: scroll;
+        scroll-behavior: smooth;
+      } 
+}

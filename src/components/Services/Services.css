@@ -1,0 +1,31 @@
+.AllServices{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 75px 0;
+}
+.each-service{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.each-service p{
+    margin-top: 5px;
+    color: gray;
+}
+.each-service :first-child {
+    margin-bottom: 10px;
+}
+
+@media (max-width:600px) {
+    .AllServices{
+        grid-template-columns: repeat(2,1fr);
+        row-gap: 2rem;
+    }
+    .each-service h3{
+        font-size: 12px;
+    }
+    .each-service p{
+        font-size: 12px;
+    }
+}

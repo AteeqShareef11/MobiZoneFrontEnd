@@ -1,0 +1,87 @@
+.customer-card {
+  background-color: #48afff;
+  color: white;
+  margin: 20px 0px;
+  padding: 20px;
+
+  border-radius: 10px;
+}
+.slick-slider {
+  margin: 0 -15px;
+}
+.slick-slide {
+  padding: 10px;
+  /* margin-right:15px; */
+  /* margin-left:15px; */
+}
+.slick-next:before,
+.slick-prev:before {
+  color: #48afff;
+  font-size: 28px;
+}
+.all-customer-card {
+  width: 90%;
+  margin: auto;
+}
+.customer-info {
+  display: flex;
+  gap: 1rem;
+}
+.img-wraper {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+.customer-name {
+  display: flex;
+  gap: 0.4rem;
+}
+.customer-card h4 {
+  margin-top: 20px;
+  height: 100px;
+}
+.product-images {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.product-images img {
+  width: 60px;
+  height: 60px;
+  border-radius: 5px;
+}
+.fiuser {
+  color: rgb(119, 119, 119);
+  font-size: 22px;
+}
+.rating {
+  width: 70px;
+}
+.verified {
+  color: orange;
+}
+.customerReview {
+  text-align: center;
+}
+.customerh5 {
+  text-align: center;
+  margin-top: 5px;
+  color: gray;
+  font-weight: 400;
+}
+
+
+@media (max-width:600px) {
+  .all-customer-card{
+    width: 75%;
+  }
+}
