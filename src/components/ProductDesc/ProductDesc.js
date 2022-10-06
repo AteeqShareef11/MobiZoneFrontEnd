@@ -10,6 +10,7 @@ import Ejection from "../../assets/ejection-pin.svg"
 import Services from './../Services/Services';
 import Specification from "./Specification";
 import { addToCart } from "../../features/cartSlice";
+import Loader from "../Loader";
 
 
 const ProductDesc = () => {
@@ -22,7 +23,7 @@ const ProductDesc = () => {
    const handleAddToCart = (data) =>{
         dispatch(addToCart(data));
         navigate("/cart")
-        console.log("add to cart")
+        
    }
   useEffect(() => {
     if(id){
@@ -34,9 +35,11 @@ const ProductDesc = () => {
   return (
     <>
       <div className="product-detail-section">
-        <div className="img-preview">
+{
+  data.image?         <div className="img-preview">
           <img width="100%" src={data.image?.secure_url} alt="" />
-        </div>
+        </div> : <Loader/>
+}
         <div className="product-detail">
           <h2>{data.name}</h2>
           <div className="rating">

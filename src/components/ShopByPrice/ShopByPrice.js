@@ -8,12 +8,12 @@ const ShopByPrice = () => {
   const [priceRange, setPriceRange] = useState();
 
   const priceRangeHandle = (item) => {
-    console.log(item.start)
+    
      setPriceRange(item.start)
  
   };
 
-  console.log(priceRange)
+  
 
   return (
     <>

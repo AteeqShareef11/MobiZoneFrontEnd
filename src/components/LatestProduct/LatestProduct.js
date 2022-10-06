@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import "./LatestProduct.css";
 import { useDispatch, useSelector } from "react-redux";
-import { addToCart } from "../../features/cartSlice";
 import { useNavigate } from "react-router-dom";
 import Slider from "react-slick";
 import Fast from "../../assets/fast.svg";
@@ -47,12 +46,9 @@ const LatestProduct = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
-  // const handleAddToCart = (product) => {
-  //   dispatch(addToCart(product));
-  //   navigate("cart");
-  // };
+ 
 
-  console.log(data);
+
 
   useEffect(() => {
      dispatch(featchProducts())
@@ -79,9 +75,7 @@ const LatestProduct = () => {
                   <span>{product.desc}</span>
                   <span className="price">RS. {product.price}</span>
                 </div>
-                {/* <button onClick={() => handleAddToCart(product)}>
-                  Add to cart
-                </button> */}
+         
               </div>
             ))}
           </Slider>

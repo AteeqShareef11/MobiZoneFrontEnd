@@ -19,7 +19,6 @@ const CreateProducts = ({itemUpdate}) => {
 
   const handleinputimage = (e) => {
     const file = e.target.files[0];
-    console.log(file);
     TransformFile(file);
   };
 
@@ -196,11 +195,11 @@ const StyledForm = styled.form`
 
 const StyledCreateProduct = styled.div`
 
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+   display: flex;
   margin: auto;
   @media (max-width:600px) {
-    grid-template-columns: 1fr;
+    flex-direction: column-reverse;
+    
   }
 `;
 

@@ -47,7 +47,7 @@ const Users = () => {
     }
 }
 
-console.log(deletedId)
+
 
 
   useEffect(()=>{

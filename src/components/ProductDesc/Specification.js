@@ -8,7 +8,7 @@ import { useSelector } from "react-redux";
 
 const Specification = () => {
   const { item: data, status } = useSelector((state) => state.singleproduct);
-  console.log("spec", data);
+  
   return (
     <>
       <div className="AllServices">

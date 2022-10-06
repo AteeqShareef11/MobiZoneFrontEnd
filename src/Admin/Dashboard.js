@@ -231,11 +231,12 @@ export default Dashboard;
 
 const StyledDashboard = styled.div`
   display: flex;
-  height: 100vh;
+  height: 100%;
 `;
 
 const SideNav = styled.div`
-  height: 100vh;
+  height: auto;
+  min-height: 100vh;
   background-color: #51abf0;
   color: white;
   width: 20%;
@@ -257,6 +258,7 @@ const SideNav = styled.div`
 const Content = styled.div`
   padding: 2rem;
   width: 80%;
+
 
    @media (max-width:600px) {
     width:100%;

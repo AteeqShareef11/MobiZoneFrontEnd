@@ -18,7 +18,7 @@ const Cart = () => {
   const cart = useSelector((state) => state.cart);
   const auth = useSelector((state) => state.auth);
 
-  console.log(cart.cartItems)
+ 
 
   const dispatch = useDispatch();
   const navigate = useNavigate();

@@ -17,16 +17,17 @@ const BrandDataSection = ({
 }) => {
   const navigate = useNavigate();
 
-console.log(loader)
 
-  return barndDataSection.length === 0 ? (
+
+  return loader? (<>
+    { barndDataSection.length === 0 ? (
     <div className="notfound">
       <div className="not_found">items not found</div>
     </div>
   ) : (
     <>
 {
-  loader ? <><div className="main-data-section">
+  <div className="main-data-section">
   <div className="data-section">
     {barndDataSection?.map((item) => (
       <div
@@ -41,11 +42,12 @@ console.log(loader)
     ))}
   </div>
   {paginationShow ? <MyPagination page={page} setPage={setPage} pageCount={pageCount}/>: null}
-</div></> : <div className="flex items-center justify-center w-full h-[100vh]"><Loader/></div>
+</div>
 }
     </>
 
-  );
+  )}
+  </>) : <div className="flex items-center justify-center w-full h-[100vh]"><Loader/></div>
 };
 
 export default BrandDataSection;

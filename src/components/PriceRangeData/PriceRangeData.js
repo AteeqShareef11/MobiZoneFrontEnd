@@ -16,7 +16,7 @@ const PriceRangeData = () => {
     const [loader,setLoader] = useState(false)
     const [brandProducts, setBrandProducts] = useState([]);
     const [barndPriceFilter, setBarndPriceFilter] = useState([]);
-   console.log(priceStart,priceEnd)
+ 
 
    const feactProductsbyprice = async () => {
     try {
@@ -24,7 +24,7 @@ const PriceRangeData = () => {
         `${url}/products/getproducts/byPriceRange?minPrice=${priceStart}&maxPrice=${priceEnd}`
       );
       const res = response.data.products;
-      console.log(res)
+     
       setBarndPriceFilter(res);
       setLoader(true)
       setFlag(true)

@@ -29,7 +29,7 @@ const ProductsAdmin = ({
       const res = response.data.products;
       const total = response.data.total;
 
-      let limit = 3;
+      let limit = 6;
       setPageCount(Math.ceil(total / limit));
       setProducts(res);
       setLoaderShow(false)
@@ -37,6 +37,7 @@ const ProductsAdmin = ({
       console.log(error.message);
     }
   };
+  console.log(products)
 
   const deletProducts = async () => {
     try {
@@ -76,7 +77,7 @@ const ProductsAdmin = ({
   };
 
   useEffect(() => {
-    console.log(productId);
+   
     if (productId) {
       deletProducts();
     }
@@ -99,7 +100,7 @@ const ProductsAdmin = ({
       {loaderShow ? (
         <Loader />
       ) : (
-        <div className="flex flex-col items-center gap-4 ">
+        <div className="w-full flex flex-col items-center gap-4 ">
           <div className=" w-full flex items-center  justify-center  ">
             <div class=" w-full text-BgPrimary border-BgPrimary border rounded-md focus-within:text-gray-400 ">
               <input

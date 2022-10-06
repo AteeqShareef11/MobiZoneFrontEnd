@@ -54,8 +54,9 @@ const FilterQuiries = ({
       );
       const res = response.data.products;
       const total = response.data.total;
- 
-      let limit = 3;
+     
+      let limit = 6;
+     
       setPageCount(Math.ceil(total / limit));
       setBrandProducts(res);
       setLoader(true);
@@ -108,7 +109,7 @@ const FilterQuiries = ({
     }
   };
 
-  // const feactProducts = async () => {
+ 
   //   try {
   //     const response = await axios.get(
   //       `${url}/products/getproducts/byAll?&brand=${brand}&minPrice=${priceSt}&maxPrice=${priceEd}&ram=${checkboxValue}&rom=${romcheckboxValue}`

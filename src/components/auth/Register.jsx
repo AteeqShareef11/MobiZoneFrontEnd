@@ -80,7 +80,7 @@ const RegisterMain = styled.div`
   justify-content: center;
   align-items: center;
   @media (max-width:600px) {
-
+   height: 120vh;
   }
 `
 const RegisterSec = styled.div`
@@ -103,6 +103,7 @@ grid-template-rows: 1fr;
   grid-template-columns: 1fr;
   height: 90vh;
   
+  
 
  }
 `
@@ -117,7 +118,7 @@ const RegisterDiv = styled.div`
   height: 65vh;
   animation-timing-function: ease;
     position: relative;
-    animation: RegisterDiv 5s;
+    animation: RegisterDiv 2s;
     @keyframes RegisterDiv {
     from {
         left: 100%;
@@ -143,8 +144,7 @@ const RegisterDiv = styled.div`
 const StyledForm = styled.form`
 
 display: flex;
-  flex-direction: column;
- 
+flex-direction: column;
  width: 100%;
  gap: 1.5rem;
 
@@ -154,6 +154,11 @@ display: flex;
   font-weight: 600;
   color: #48AFFF;
 }
+ @media (max-width:600px) {
+ h2{
+  font-size: 18px;
+ } 
+ }
 button,
   input {
   
@@ -201,7 +206,7 @@ color: white;
 gap: 1rem;
 animation-timing-function: linear;
     position: relative;
-    animation: RightDiv 5s;
+    animation: RightDiv 2s;
 
 
 height: 65vh;
@@ -228,6 +233,11 @@ h1{
   font-weight: 600;
   letter-spacing: 1.5px;
 
+}
+@media (max-width:600px) {
+ h1{
+  font-size: 18px;
+ } 
 }
 p{
   font-size: 12px;

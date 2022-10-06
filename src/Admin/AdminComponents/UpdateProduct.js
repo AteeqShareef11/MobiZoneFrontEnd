@@ -20,7 +20,7 @@ const UpdateProduct = ({ itemUpdate ,setEditShow ,  setOpenPopUp, setUpdate, upd
 
   const handleinputimage = (e) => {
     const file = e.target.files[0];
-    console.log(file);
+
     TransformFile(file);
   };
 
@@ -88,7 +88,7 @@ const UpdateProduct = ({ itemUpdate ,setEditShow ,  setOpenPopUp, setUpdate, upd
 
 
   return (
-    <StyledCreateProduct>
+    <StyledUpdateProduct>
       <StyledForm onSubmit={handleSubmit}>
         <h3>Create a Product</h3>
         <input
@@ -189,7 +189,7 @@ const UpdateProduct = ({ itemUpdate ,setEditShow ,  setOpenPopUp, setUpdate, upd
           </>
         )}
       </ImagePreview>
-    </StyledCreateProduct>
+    </StyledUpdateProduct>
   );
 };
 
@@ -219,13 +219,12 @@ const StyledForm = styled.form`
   }
 `;
 
-const StyledCreateProduct = styled.div`
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+const StyledUpdateProduct = styled.div`
+display: flex;
   margin: auto;
 
   @media (max-width:600px) {
-    grid-template-columns: 1fr;
+    flex-direction: column-reverse;
   }
 `;
 

@@ -5,22 +5,23 @@
 }
 .product{
     width: 250px;
-    height: 400px;
+    height: 450px;
     max-width: 100%;
     margin: 1rem auto;
     padding: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    cursor: pointer;
+    
     border-radius: 15px;
     box-shadow: -5px -5px 10px rgba(255, 255,255, 0.5), 2px 2px 5px  rgba(94, 184,121, 0.3);
 }
 
 .product-img{
-    width: 60%;
+    width: 55%;
     margin-top: 1rem;
     margin-left: auto;
+    cursor: pointer;
 }
 .product h3 {
     font-size: 25px;

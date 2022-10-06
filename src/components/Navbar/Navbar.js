@@ -28,7 +28,7 @@ const Navbar = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
-  console.log("auth", auth);
+  
   const serchChangeHandle = (e) => {
     const search = e.target.value;
     setSearchItem(search);
@@ -52,7 +52,7 @@ const Navbar = () => {
     setShowSearchItem(false);
   };
 
-  console.log("userdrop", userDropDown);
+ 
   useEffect(() => {
     if (searchItem.trim()) {
       feactProductsbyName();

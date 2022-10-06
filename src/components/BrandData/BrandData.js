@@ -84,7 +84,7 @@ const BrandData = () => {
                 />
               ) : (
                 <BrandDataSection
-                   paginationShow={paginationShow}
+                  paginationShow={paginationShow}
                   brand={brand}
                   page={page}
                   setPage={setPage}

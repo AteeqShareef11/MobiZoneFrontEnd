@@ -21,7 +21,7 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     dispatch(loginUser(user));
-    console.log("autht", auth);
+    
   
   };
 
@@ -83,6 +83,7 @@ const LoginMain = styled.div`
   justify-content: center;
   align-items: center;
   @media (max-width: 600px) {
+    height: 120vh;
   }
 `;
 
@@ -121,7 +122,7 @@ const LeftDiv = styled.div`
 
   animation-timing-function: ease;
   position: relative;
-  animation: LeftDiv 5s;
+  animation: LeftDiv 2s;
 
   @keyframes LeftDiv {
     from {
@@ -135,6 +136,9 @@ const LeftDiv = styled.div`
 
   @media (max-width: 600px) {
     height: 30vh;
+    h1{
+      font-size: 18px;
+    }
   }
 
   h1 {
@@ -162,7 +166,7 @@ const LoginDiv = styled.div`
 
   animation-timing-function: linear;
   position: relative;
-  animation: LoginDiv 5s;
+  animation: LoginDiv 2s;
 
   @keyframes LoginDiv {
     from {
@@ -176,6 +180,7 @@ const LoginDiv = styled.div`
 
   @media (max-width: 600px) {
     height: 30vh;
+
   }
 `;
 
@@ -190,6 +195,11 @@ const StyledForm = styled.form`
     font-size: 22px;
     font-weight: 600;
     color: #48afff;
+  }
+  @media (max-width:600px) {
+    h2{
+      font-size: 22px;
+    }
   }
   button,
   input {

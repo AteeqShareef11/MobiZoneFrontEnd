@@ -50,7 +50,7 @@ function TableOrder(props) {
   const [itemUpdate,setItemUpdate] = React.useState("")
 
   const updateDeliveryStatus = async () => {
-    console.log("updateId", editId);
+   
     try {
       const response = await axios.post(
         `${url}/orderStatusUpdate?id=${editId}&item=${itemUpdate}`
@@ -62,7 +62,7 @@ function TableOrder(props) {
   };
 
   const handleEditStatus = (id,item) => {
-    console.log("edit", id);
+    
     setItemUpdate(item)
     setEditId(id);
     console.log(editId);
@@ -188,7 +188,7 @@ export default function CollapsibleTable() {
       const total = response.data.total;
       
 
-      let limit = 3;
+      let limit = 4;
       setPageCount(Math.ceil(total / limit));
       setOrders(res);
       setLoaderShow(false);
@@ -197,7 +197,7 @@ export default function CollapsibleTable() {
     }
   };
 
-  console.log(orders);
+
 
   React.useEffect(() => {
     if(page){
