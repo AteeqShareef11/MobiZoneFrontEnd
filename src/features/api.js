@@ -1,7 +1,7 @@
-const LIVE_SERVER = "https://mobizone.herokuapp.com/api";
-const LOCAL_SERVER="http://localhost:5000/api"
+const LIVE_SERVER = "https://bored-lime-armadillo.cyclic.cloud/api";
+const LOCAL_SERVER = "http://localhost:5000/api";
 
-export const url =LIVE_SERVER
+export const url = LIVE_SERVER;
 
 export const setHeaders = () => {
   const headers = {
